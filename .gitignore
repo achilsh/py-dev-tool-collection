@@ -1,1 +1,4 @@
 myenv/
+mylog/my_log.log
+mylog/__pycache__/
+.vscode/

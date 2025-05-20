@@ -2,3 +2,4 @@ myenv/
 mylog/my_log.log
 mylog/__pycache__/
 .vscode/
+fastapi_demo/__pycache__/

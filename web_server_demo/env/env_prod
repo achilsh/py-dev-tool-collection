@@ -1,0 +1,7 @@
+DEMO_SRC_DIR=/data/web/www/demo-service
+DEMO_RUN_DIR=/data/docker/server/demo-server
+TIME_ZONE=UTC
+
+LOG_NAME=demo-server
+LOGS_NUM=3
+API_PREFIX=/demo/v1/user/call

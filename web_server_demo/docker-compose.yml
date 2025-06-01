@@ -1,0 +1,23 @@
+services:
+  demo-service:
+    build:
+      context: .
+      target: DemoProd
+      args:
+        - APP_ENV=prod
+        - DEMO_SRC_DIR=${DEMO_SRC_DIR}
+        - DEMO_RUN_DIR=${DEMO_RUN_DIR}
+    image: demo-server:v1.0.1
+    container_name: demo-server-prod
+    environment:
+      - APP_ENV=prod ##设置容器运行时环境变量为 prod，应用会加载生产配置
+      - TZ=${TIME_ZONE}
+    volumes:
+      - ${DEMO_SRC_DIR:-.}:/demo-server
+      - ${DEMO_RUN_DIR:-.}/logs:/demo-server/logs
+    networks:
+      - demo-runnet
+    restart: always
+networks:
+  demo-runnet:
+    external: true

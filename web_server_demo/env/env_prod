@@ -2,6 +2,10 @@ DEMO_SRC_DIR=/data/web/www/demo-service
 DEMO_RUN_DIR=/data/docker/server/demo-server
 TIME_ZONE=UTC
 
+DATABASE_URL=127.0.0.1:3306
+DB_USER=root
+DB_PASSWORD=123456
+
 LOG_NAME=demo-server
 LOGS_NUM=3
 API_PREFIX=/demo/v1/user/call

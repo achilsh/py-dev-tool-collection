@@ -4,3 +4,4 @@ mylog/__pycache__/
 .vscode/
 fastapi_demo/__pycache__/
 logs/
+tortoise-orm/

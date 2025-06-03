@@ -2,6 +2,9 @@ import pytest
 from app.main import app
 from app.core.log import logger
 from fastapi.testclient import TestClient
+    # 确保测试用户存在
+from app.models.user import UserModel
+from tortoise.contrib.test import TestCase
 
 
 ### pytest ./tests/test_user.py
@@ -11,6 +14,13 @@ def test_client():
     return TestClient(app)
 
 def test_get_user_info(test_client): 
+    user = UserModel.create(
+        name="test_user",
+        email="test@example.com",
+        cardId="test_card_123",
+        address="Test Address"
+    )
+
     input_data = {
         "id":100,
         "username":"demo_user",

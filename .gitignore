@@ -5,3 +5,5 @@ mylog/__pycache__/
 fastapi_demo/__pycache__/
 logs/
 tortoise-orm/
+test_py
+.trunk

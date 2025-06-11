@@ -14,7 +14,7 @@ except ImportError:
 
 class MultiprocessHandler(logging.FileHandler):
     """
-    Say something about the ExampleCalass...
+    Say something about the ExampleClass...
 
     Args:
         args_0 (`type`):

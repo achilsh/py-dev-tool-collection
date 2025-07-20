@@ -7,3 +7,6 @@ logs/
 tortoise-orm/
 test_py
 .trunk
+uv_pkg_usage/__pycache__
+uv_pkg_usage/dist
+uv_pkg_usage/.venv
